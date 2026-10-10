@@ -5,15 +5,15 @@
 
 class Address{
 	private:
-		string Street
-		string City
-		string State
-		string Zip
+		std::string Street;
+		std::string City;
+		std::string State;
+		std::string Zip;
 	
-	Public:
-		Address()
-		void init(street,city,state,zip)
-		void printAddress()
+	public:
+		Address();
+		void init(std::string Street, std::string City, std::string State, std::string Zip);
+		void printAddress();
 }; //end class Address
 
 
