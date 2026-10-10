@@ -5,12 +5,13 @@
 
 void testAddress();
 void testDate();
+void testStudent();
 
 int main(){
 	std::cout << "Hello!" << std::endl;
 	testAddress();
 	testDate();
-	//testStudent();
+	testStudent();
 	return 0;
 } // end main
 
@@ -33,5 +34,6 @@ void testStudent(){
   student->printStudent();
   std::cout << std::endl;
   std::cout << student->getLastFirst();
+  std::cout << "\n" << std::endl;
   delete student;
 } // end testStudent

@@ -32,3 +32,6 @@ runTest: testDate
 
 debug: database
 	gdb database
+
+Valgrind: database
+	valgrind --leak-check=full ./database

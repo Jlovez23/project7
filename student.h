@@ -10,17 +10,18 @@ class Student{
 		std::string Fname;
 		std::string Lname;
 		int CreditHours;
-		date* DOB;
-		date* GradeDate;
-		Address* Address;
+		Date* DOB;
+		Date* GradDate;
+		Address* address;
 	public:
 		Student();
 		~Student();
 		void init(std::string Studentstr);
 		void printStudent();
-		string getLname();
-		string getFname();
+		std::string getLname();
+		std::string getFname();
 		int getCredit();
+		std::string getLastFirst();
 }; //end Student class
 
 

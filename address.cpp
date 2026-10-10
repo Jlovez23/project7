@@ -30,9 +30,13 @@ void Address::init(std::string Street, std::string City, std::string State, std:
 } //end address initializer
 
 void Address::printAddress(){
+	std::cout << Address::Street << "\n";
+	std::cout << Address::City << " " << Address::State << ", " << Address::Zip;
+	/*
 	std::cout << "Street: " << Address::Street << "\n"; 
 	std::cout << "City: " << Address::City << "\n"; 
 	std::cout << "State: " << Address::State << "\n"; 
-	std::cout << "Zip Code: " << Address::Zip << "\n"; 
+	std::cout << "Zip Code: " << Address::Zip << "\n";
+        */	
 	std::cout << std::endl;
 } //end print

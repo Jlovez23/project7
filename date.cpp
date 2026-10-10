@@ -37,8 +37,11 @@ void Date::init(std::string dateString){
 }// end date init
 
 void Date::printDate(){
-	std::cout << "Month: " << Date::Month << "\n";
-	std::cout << "Day: " << Date::Day << "\n";
-	std::cout << "Year: " << Date::Year << "\n";
+	static const std::string monthName[] = {
+		"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+	}; // end monthName array def
+	std::cout << monthName[Date::Month - 1] << " ";
+       	std::cout << Date::Day << ", ";
+	std::cout << Date::Year;	
 	std::cout << std::endl;
 }//end print
